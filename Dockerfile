@@ -12,7 +12,7 @@
 #CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 #EXPOSE 80
  
-FROM ubuntu:latest 
+FROM ubuntu:latest
 RUN apt update 
 RUN apt-get update && apt-get install -y apt-utils && apt-get install -y curl
 RUN apt install -y apache2-utils 
